@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
     if !current_user.admin?
       flash[:alert] = "You are not admit"
       redirect_to root_path
+    end
   end
 
 end
